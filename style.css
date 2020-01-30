@@ -1,0 +1,184 @@
+body {
+  /* background-color: black; */
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  /* width: 100vw; */
+  height: 100vh;
+}
+
+/* header styles */
+header {
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #8e8e8e;
+  background-color: #24292e;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header .right-content {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.signup-btn {
+  border-color: white;
+  border-radius: 6px;
+  border: solid;
+  border-width: 1px;
+  color: white;
+  width: fit-content;
+  padding: 4px;
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.signup-btn > p {
+  margin: 0;
+}
+
+.burger {
+  width: 18px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/*  hero styles */
+.hero {
+  background: url(https://github.com/images/modules/site/heroes/simple-codelines.svg),
+    #2b3137;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hero-title {
+  color: white;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.hero-p {
+  font-size: 20px;
+  font-weight: 100;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.hero-p a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.125);
+}
+
+.hero-btn,
+.tablet {
+  background-color: #2ebc4f;
+  width: fit-content;
+  margin: auto;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+.hero-btn p,
+.tablet p {
+  color: white;
+  padding: 20px 32px;
+}
+
+.card {
+  display: none;
+}
+
+/* for tablets */
+@media only screen and (min-width: 600px) {
+  .hero-btn {
+    display: none;
+  }
+
+  .card {
+    display: block;
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #fafbfc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .card p {
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .card-wrap {
+    width: 90%;
+    margin: auto;
+  }
+
+  .card-wrap input {
+    width: 95%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    line-height: 1;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: none;
+    background-color: #fafbfc;
+    border-color: grey;
+  }
+
+  .p {
+    font-size: 10px;
+  }
+
+  .p1 {
+    color: #6a737d;
+  }
+
+  .tablet {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .tablet p {
+    text-align: center;
+  }
+
+  .left {
+    width: 100%;
+  }
+}
+
+/* for web  */
+@media only screen and (min-width: 760px) {
+  .hero {
+    display: flex;
+  }
+
+  .left {
+    width: 50%;
+  }
+}
